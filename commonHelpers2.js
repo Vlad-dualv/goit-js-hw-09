@@ -1,0 +1,2 @@
+import"./assets/modulepreload-polyfill-3cfb730f.js";const t=document.querySelector(".feedback-form"),a=t.querySelector("textarea"),o="feedback-form-state";function n(e){e.preventDefault();const s=t.elements.email.value.trim(),l=a.value.trim(),r=JSON.stringify({email:s,message:l});localStorage.setItem(o,r),t.reset()}t.addEventListener("submit",n);const c=localStorage.getItem(o)??"";try{const e=JSON.parse(c);console.log(e),a.value=e.message,t.elements.email.value=e.email}catch{console.log("Please enter valid data!")}
+//# sourceMappingURL=commonHelpers2.js.map
